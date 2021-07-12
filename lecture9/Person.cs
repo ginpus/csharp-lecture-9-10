@@ -8,7 +8,9 @@ namespace lecture9
 {
     internal class Person
     {
+        //private atributai liks klases visuje (nebus iskisti/panaudojami)
         private string Name;
+
         private string SurName;
         private int Age;
 
@@ -17,8 +19,10 @@ namespace lecture9
             Name = name;
             SurName = surname;
             Age = age;
+            Console.WriteLine($"Created person: {Name}, {SurName}, {Age}");
         }
 
+        // tik su metodu public ir kas yra po juo mes galesim naudoti main'e (exposinti)
         public void SetName(string name)
         {
             Name = name;
@@ -32,7 +36,7 @@ namespace lecture9
 
         public void SayName(string name)
         {
-            Console.WriteLine(name);
+            Console.WriteLine($"Now the new name is {name} and the surname is {SurName}. Age is still the same - {Age}");
         }
     }
 }

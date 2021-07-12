@@ -9,6 +9,16 @@ namespace lecture9
             var pranas = new Person("Pranas", "Masiotas", 52);
 
             pranas.SetName("Algis");
+
+            var tv = new TV();
+
+            tv.ToggleOnOff();
+
+            var book = new Book();
+
+            book.Title = "Haris Poteris";
+
+            Console.WriteLine(book.BookName);
         }
     }
 }
