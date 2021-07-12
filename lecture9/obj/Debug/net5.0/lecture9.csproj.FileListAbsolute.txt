@@ -1,0 +1,16 @@
+F:\Desktop\dotNET\C#\7.12\lecture9\lecture9\bin\Debug\net5.0\lecture9.exe
+F:\Desktop\dotNET\C#\7.12\lecture9\lecture9\bin\Debug\net5.0\lecture9.deps.json
+F:\Desktop\dotNET\C#\7.12\lecture9\lecture9\bin\Debug\net5.0\lecture9.runtimeconfig.json
+F:\Desktop\dotNET\C#\7.12\lecture9\lecture9\bin\Debug\net5.0\lecture9.runtimeconfig.dev.json
+F:\Desktop\dotNET\C#\7.12\lecture9\lecture9\bin\Debug\net5.0\lecture9.dll
+F:\Desktop\dotNET\C#\7.12\lecture9\lecture9\bin\Debug\net5.0\ref\lecture9.dll
+F:\Desktop\dotNET\C#\7.12\lecture9\lecture9\bin\Debug\net5.0\lecture9.pdb
+F:\Desktop\dotNET\C#\7.12\lecture9\lecture9\obj\Debug\net5.0\lecture9.csproj.AssemblyReference.cache
+F:\Desktop\dotNET\C#\7.12\lecture9\lecture9\obj\Debug\net5.0\lecture9.GeneratedMSBuildEditorConfig.editorconfig
+F:\Desktop\dotNET\C#\7.12\lecture9\lecture9\obj\Debug\net5.0\lecture9.AssemblyInfoInputs.cache
+F:\Desktop\dotNET\C#\7.12\lecture9\lecture9\obj\Debug\net5.0\lecture9.AssemblyInfo.cs
+F:\Desktop\dotNET\C#\7.12\lecture9\lecture9\obj\Debug\net5.0\lecture9.csproj.CoreCompileInputs.cache
+F:\Desktop\dotNET\C#\7.12\lecture9\lecture9\obj\Debug\net5.0\lecture9.dll
+F:\Desktop\dotNET\C#\7.12\lecture9\lecture9\obj\Debug\net5.0\ref\lecture9.dll
+F:\Desktop\dotNET\C#\7.12\lecture9\lecture9\obj\Debug\net5.0\lecture9.pdb
+F:\Desktop\dotNET\C#\7.12\lecture9\lecture9\obj\Debug\net5.0\lecture9.genruntimeconfig.cache
