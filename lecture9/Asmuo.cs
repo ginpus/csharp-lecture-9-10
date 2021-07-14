@@ -64,7 +64,7 @@ namespace lecture9
         public override void GetInfo() // metodu perrasymas - kai vaikineje klaseje islaikome ta pati metodo pavadinima (kaip ir buvo tevineje klaseje)
         {
             base.GetInfo(); //iskvieciamas tevinis metodas ir toliau vykdoma, kas papildomai vaikiniame metode. perrašomas ir/ar praplečiamas metodas. tevinis pasislepia
-            Console.WriteLine($"{_vardas} {_pavarde} {_studNumeris}");
+            Console.WriteLine($"{this} {_vardas} {_pavarde} {_studNumeris}");
         }
     }
 }
