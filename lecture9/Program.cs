@@ -53,21 +53,21 @@ namespace lecture9
             var studentas1 = new Studentas("365489", "Antanas", "Sukodaitis");
             var studentas2 = new Studentas("Janina", "Bekodaitiene");
 
-            // studentas1.GetName();
-            // studentas1.GetSurName();
-            //studentas1.GetInfo();
-            //studentas1.GiveNumber();
+            studentas1.GetName();
+            studentas1.GetSurName();
+            studentas1.GetInfo();
+            studentas1.GiveNumber();
             Console.WriteLine("numerio keitimas");
             studentas1.ChangeNumber("123456");
             //studentas1.GetInfo();
 
-            //studentas2.GetName();
-            //studentas2.GetSurName();
-            //studentas2.GetInfo();
-            //studentas2.GiveNumber();
+            studentas2.GetName();
+            studentas2.GetSurName();
+            studentas2.GetInfo();
+            studentas2.GiveNumber();
             Console.WriteLine("numerio idejimas");
             studentas2.ChangeNumber("654321");
-            //studentas2.GetInfo();
+            studentas2.GetInfo();
 
             // galim konvertuoti studenta i asmeni. Upcastingas
             Asmuo fuksas = (Asmuo)studentas1;
@@ -77,8 +77,6 @@ namespace lecture9
             // downcastingas
             var velStudentas = (Studentas)studentas1;
             studentas1.GetInfo();
-            fuksas.GetInfo();
-            velStudentas.GetInfo();
         }
     }
 }
