@@ -41,14 +41,35 @@ namespace lecture9
                         var naujaSeima = new Seima("homidai");*//*
             var naujaRusis = new Rusis("homo sapiens", "homidai", "gyvunai");*/
 
-            var motociklas = new Motociklas(600, "Street", 2, "Honda", "Raudonas");
-            motociklas.Judeti(); // Transporto priemones metodas (bendras)
-            motociklas.AntVieno(); // motociklo metodas (specifinis)
+            /*            var motociklas = new Motociklas(600, "Street", 2, "Honda", "Raudonas");
+                        motociklas.Judeti(); // Transporto priemones metodas (bendras)
+                        motociklas.AntVieno(); // motociklo metodas (specifinis)
 
-            motociklas.GiveStatus();
-            Console.WriteLine("iskvieciu dauzau:");
-            motociklas.Dauzau(true);
-            motociklas.GiveStatus();
+                        motociklas.GiveStatus();
+                        Console.WriteLine("iskvieciu dauzau:");
+                        motociklas.Dauzau(true);
+                        motociklas.GiveStatus();*/
+
+            var studentas1 = new Studentas("365489", "Antanas", "Sukodaitis");
+            var studentas2 = new Studentas("Janina", "Bekodaitiene");
+
+            studentas1.GetName();
+            studentas1.GetSurName();
+            studentas1.GetInfo();
+            studentas1.GiveNumber();
+            studentas1.GiveStudInfo();
+            Console.WriteLine("numerio keitimas");
+            studentas1.ChangeNumber("123456");
+            studentas1.GiveStudInfo();
+
+            studentas2.GetName();
+            studentas2.GetSurName();
+            studentas2.GetInfo();
+            studentas2.GiveNumber();
+            studentas2.GiveStudInfo();
+            Console.WriteLine("numerio idejimas");
+            studentas2.ChangeNumber("654321");
+            studentas2.GiveStudInfo();
         }
     }
 }
