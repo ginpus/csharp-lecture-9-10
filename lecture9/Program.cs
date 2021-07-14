@@ -57,19 +57,23 @@ namespace lecture9
             studentas1.GetSurName();
             studentas1.GetInfo();
             studentas1.GiveNumber();
-            studentas1.GiveStudInfo();
             Console.WriteLine("numerio keitimas");
             studentas1.ChangeNumber("123456");
-            studentas1.GiveStudInfo();
+            studentas1.GetInfo();
 
             studentas2.GetName();
             studentas2.GetSurName();
             studentas2.GetInfo();
             studentas2.GiveNumber();
-            studentas2.GiveStudInfo();
             Console.WriteLine("numerio idejimas");
             studentas2.ChangeNumber("654321");
-            studentas2.GiveStudInfo();
+            studentas2.GetInfo();
+
+            // galim konvertuoti studenta i asmeni. Upcastingas
+            Asmuo fuksas = (Asmuo)studentas1;
+
+            // downcastingas
+            var velStudentas = (Studentas)fuksas;
         }
     }
 }

@@ -31,7 +31,7 @@ namespace lecture9
             return _pavarde;
         }
 
-        public void GetInfo()
+        public virtual void GetInfo() // uzdejus 'virtual', mes galesime perrasyti jo implementacija vaikineje klaseje
         {
             Console.WriteLine($"Vardas: {_vardas}; Pavarde: {_pavarde}");
         }
@@ -61,8 +61,9 @@ namespace lecture9
         {
         }
 
-        public void GiveStudInfo()
+        public override void GetInfo() // metodu perrasymas - kai vaikineje klaseje islaikome ta pati metodo pavadinima (kaip ir buvo tevineje klaseje)
         {
+            base.GetInfo(); //iskvieciamas tevinis metodas ir toliau vykdoma, kas papildomai vaikiniame metode. perrašomas ir/ar praplečiamas metodas. tevinis pasislepia
             Console.WriteLine($"{_vardas} {_pavarde} {_studNumeris}");
         }
     }
