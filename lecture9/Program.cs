@@ -44,6 +44,11 @@ namespace lecture9
             var motociklas = new Motociklas(600, "Street", 2, "Honda", "Raudonas");
             motociklas.Judeti(); // Transporto priemones metodas (bendras)
             motociklas.AntVieno(); // motociklo metodas (specifinis)
+
+            motociklas.GiveStatus();
+            Console.WriteLine("iskvieciu dauzau:");
+            motociklas.Dauzau(true);
+            motociklas.GiveStatus();
         }
     }
 }

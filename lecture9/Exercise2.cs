@@ -18,6 +18,14 @@ namespace lecture9
         protected string _marke;
         protected string _spalva;
 
+        public TransportoPriemone(int ratuSkaicius, string marke, string spalva)
+        {
+            _ratuSkaicius = ratuSkaicius;
+            _marke = marke;
+            _spalva = spalva;
+            Console.WriteLine($"Naujai sukurta transporto priemone su {ratuSkaicius} ratais, {marke} markes ir {spalva} spalvos");
+        }
+
         public void Judeti()
         {
             Console.WriteLine($"{this} Judu");
@@ -37,20 +45,19 @@ namespace lecture9
         {
             Console.WriteLine($"{this} Suku desinen");
         }
-
-        public TransportoPriemone(int ratuSkaicius, string marke, string spalva)
-        {
-            _ratuSkaicius = ratuSkaicius;
-            _marke = marke;
-            _spalva = spalva;
-            Console.WriteLine($"Naujai sukurta transporto priemone su {ratuSkaicius} ratais, {marke} markes ir {spalva} spalvos");
-        }
     }
 
     internal class Masina : TransportoPriemone
     {
         protected int _arklioGalios;
         protected string _kebulas;
+
+        public Masina(int arklioGalios, string kebulas, int ratuSkaicius, string marke, string spalva) : base(ratuSkaicius, marke, spalva)
+        {
+            _arklioGalios = arklioGalios;
+            _kebulas = kebulas;
+            Console.WriteLine($"Naujai sukurta masina {arklioGalios} arklio galiu ir {kebulas} kebulo");
+        }
 
         public void Lenkti()
         {
@@ -61,22 +68,19 @@ namespace lecture9
         {
             Console.WriteLine($"{this} Rudiju");
         }
-
-        public Masina(int arklioGalios, string kebulas, int ratuSkaicius, string marke, string spalva) : base(ratuSkaicius, marke, spalva)
-        {
-            _arklioGalios = arklioGalios;
-            _kebulas = kebulas;
-            _ratuSkaicius = ratuSkaicius;
-            _marke = marke;
-            _spalva = spalva;
-            Console.WriteLine($"Naujai sukurta masina {arklioGalios} arklio galiu ir {kebulas} kebulo");
-        }
     }
 
     internal class Sunkvezimis : TransportoPriemone
     {
         protected int _mase;
         protected int _asiuSkaicius;
+
+        public Sunkvezimis(int mase, int asiuSkaicius, int ratuSkaicius, string marke, string spalva) : base(ratuSkaicius, marke, spalva)
+        {
+            _mase = mase;
+            _asiuSkaicius = asiuSkaicius;
+            Console.WriteLine($"Naujai sukurtas sukvezimis {mase} tonu mases ir {asiuSkaicius} asiu skaiciumi");
+        }
 
         public void Vezu()
         {
@@ -87,22 +91,20 @@ namespace lecture9
         {
             Console.WriteLine($"{this} Velku");
         }
-
-        public Sunkvezimis(int mase, int asiuSkaicius, int ratuSkaicius, string marke, string spalva) : base(ratuSkaicius, marke, spalva)
-        {
-            _mase = mase;
-            _asiuSkaicius = asiuSkaicius;
-            _ratuSkaicius = ratuSkaicius;
-            _marke = marke;
-            _spalva = spalva;
-            Console.WriteLine($"Naujai sukurtas sukvezimis {mase} tonu mases ir {asiuSkaicius} asiu skaiciumi");
-        }
     }
 
     internal class Motociklas : TransportoPriemone
     {
         protected int _kubatura;
         protected string _stilius;
+        protected bool _dauztas;
+
+        public Motociklas(int kubatura, string stilius, int ratuSkaicius, string marke, string spalva) : base(ratuSkaicius, marke, spalva)
+        {
+            _kubatura = kubatura;
+            _stilius = stilius;
+            Console.WriteLine($"Naujai sukurtas motociklas {_kubatura} kubaturos variklio ir {_stilius} stiliaus. Esu dauztas - {_dauztas}");
+        }
 
         public void AntVieno()
         {
@@ -114,14 +116,16 @@ namespace lecture9
             Console.WriteLine($"{this} Svyru ties posukiu");
         }
 
-        public Motociklas(int kubatura, string stilius, int ratuSkaicius, string marke, string spalva) : base(ratuSkaicius, marke, spalva)
+        public bool Dauzau(bool dauztas)
         {
-            _kubatura = kubatura;
-            _stilius = stilius;
-            _ratuSkaicius = ratuSkaicius;
-            _marke = marke;
-            _spalva = spalva;
-            Console.WriteLine($"Naujai sukurtas motociklas {kubatura} kubaturos variklio ir {stilius} stiliaus");
+            _dauztas = dauztas;
+            Console.WriteLine("Avarija!");
+            return dauztas;
+        }
+
+        public void GiveStatus()
+        {
+            Console.WriteLine($"Kubatura: {_kubatura}, marke: {_marke}, dauztas?: {_dauztas}");
         }
     }
 }
